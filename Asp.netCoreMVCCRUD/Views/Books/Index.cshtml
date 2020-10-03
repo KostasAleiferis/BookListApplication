@@ -1,11 +1,15 @@
-﻿<br />
+﻿@{
+    ViewData["Title"] = "Read";
+}
+
+<br />
 <div class="container row m-0 p-0 ">
     <div class="col-6">
         <h2 class="text-info">Book List</h2>
     </div>
-    <div class="col-3 offset-3">
+    <div class="col-3 offset-3 text-right">
         <a asp-action="Upsert" asp-controller="Books" class="btn btn-info from-control text-white">
-            Add New Book
+            <i class='fas fa-plus'></i>
         </a>
     </div>
     <div class="col-12 border p-3">
@@ -19,6 +23,12 @@
             </thead>
         </table>
     </div>
+</div>
+
+<br>
+
+<div class="text-center">
+    <p><a asp-area="" asp-controller="Home" asp-action="Index">Back to Home Page</a></p>
 </div>
 
 @section Scripts{
